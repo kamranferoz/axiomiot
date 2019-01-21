@@ -1,0 +1,32 @@
+<html>
+
+<script>
+    function checkLogin() {
+        var lid = prompt("Enter your ID: ");
+
+        if (lid == 'Admin') {
+            var lpwd = prompt("Enter your Password: ");
+
+            if (lpwd == 'TheMaster') {
+                alert("Welcome!");
+            } else if (lpwd == null || lpwd == "") {
+                alert("Canceled!");
+            } else {
+                alert("Wrong password");
+            }
+
+        } else if (lid == null || lid == "") {
+            alert("Canceled!");
+        } else {
+            alert("I don't know you!");
+        }
+    }
+
+    checkLogin();
+</script>
+
+<body>
+
+</body>
+
+</html>

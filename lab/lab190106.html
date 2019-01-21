@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Working With Arrays</title>
+        <script>    
+                var arrStd = [];
+                var arrReq = ["Name","ID","Age"];
+                var stdLen = prompt("How many Students?");
+                
+                for(i=0; i<stdLen; i++){            
+                    arrStd[i] = [];
+                     
+                    for(var col=0; col<arrReq.length; col++)
+                    {
+                        arrStd[i][col] = prompt("Enter the " + arrReq[col]);
+                    }
+                }
+
+                for(i=0; i<stdLen; i++){
+                    console.log("Student " + (i+1) + " information!");
+                    
+                    for(var j=0; j<arrReq.length; j++){
+                        console.log("The student " + arrReq[j] + " is " + arrStd[i][j]);
+                    }
+                }
+        </script>
+    </head>
+    <body>
+
+    
+</body>
+</html>
