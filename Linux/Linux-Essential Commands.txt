@@ -1,0 +1,8 @@
+To create a new file:
+echo [TEXT-CONTENT] > [FILE-NAME.EXT]
+
+To append text in existing file:
+echo [APPEND-TEXT-CONTENT] >> [FILE-NAME.EXT]
+
+To Remove FOLDER:
+rm -r [FOLDER-NAME]
