@@ -1,0 +1,38 @@
+<html>
+
+<script>
+    function showSign() {
+        var isNum = true;
+
+        while (isNum) {
+            var numN = prompt("Enter your number: ");
+            isNum = !isNaN(numN);
+
+            if (numN == null || !isNum) {
+                isNum = false;
+                alert("Good Bye!");
+            }
+
+            if (isNum) {
+                numN = parseInt(numN);
+                if (numN > 0) {
+                    alert("Your entered value is Greater than Zero");
+                } else if (numN < 0) {
+                    alert("Your entered value is Less than Zero");
+                } else {
+                    alert("Your entered value is Zero");
+                }
+
+            }
+        }
+
+    }
+
+    showSign();
+</script>
+
+<body>
+
+</body>
+
+</html>
